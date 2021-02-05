@@ -63,6 +63,7 @@ class Bangumi():
     A program
     """
     def __init__(self, data) -> None:
+        self._data = data
         self._id = int(data.get("contentsId", 0))
         self._program_id = int(data.get("programId", 0))
         self._network_id = int(data.get("networkId", "0x0"), 16)
